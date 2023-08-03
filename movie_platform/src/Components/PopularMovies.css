@@ -1,7 +1,7 @@
 .body {
   background-color: gray;
 }
-.TCard {
+.PCard {
   width: 17.7%;
   height: 400px;
   border-radius: 5px;
@@ -16,28 +16,28 @@
   /* opacity: 0; */
 }
 
-.poster1T {
-  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/Happiness_for_beginners.jpg");
+.poster1P {
+  background-image: url(/public/GuardiansOfTheGalaxy.jpg);
   background-size: 100% 100%;
 }
-.poster2T {
-  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/JoyRide.jpg");
+.poster2P {
+  background-image: url(/public/MiraculousLadybugCatNoir.jpg);
   background-size: 100% 100%;
 }
-.poster3T {
-  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/Paradise.jpg");
+.poster3P {
+  background-image: url(/public/ResidentEvil.jpg);
   background-size: 100% 100%;
 }
-.poster4T {
-  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/SympathyForTheDevil.jpg");
+.poster4P {
+  background-image: url(/public/TheLittleMermaid.jpeg);
   background-size: 100% 100%;
 }
-.poster5T {
-  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/TheBeanieBubble.jpg");
+.poster5P {
+  background-image: url(/public/Transformer.jpg);
   background-size: 100% 100%;
 }
 
-.TMovieName {
+.PMovieName {
   color: white;
   width: fit-content;
   font-size: large;
@@ -47,14 +47,14 @@
   /* border: 1px solid black; */
   margin: 0% auto 0% auto;
   /* background: linear-gradient(
-    0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
-  ); */
+      0deg,
+      rgba(20, 116, 155, 0.5),
+      rgba(20, 116, 155, 0.5)
+    ); */
   /* url(D:/My_Projects/movie_platform/movie_platform/public/Happiness_for_beginners.jpg); */
 }
 
-.TRating {
+.PRating {
   color: white;
   width: fit-content;
   font-size: large;
@@ -64,12 +64,12 @@
   /* border: 1px solid black; */
   margin: 0% auto 0% auto;
   /* background: linear-gradient(
-    0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
-  ); */
+      0deg,
+      rgba(20, 116, 155, 0.5),
+      rgba(20, 116, 155, 0.5)
+    ); */
 }
-.TReleaseYear {
+.PReleaseYear {
   color: white;
   width: fit-content;
   font-size: large;
@@ -79,20 +79,20 @@
   /* border: 1px solid black; */
   margin: 0% auto 0% auto;
   /* background: linear-gradient(
-    0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
-  ); */
+      0deg,
+      rgba(20, 116, 155, 0.5),
+      rgba(20, 116, 155, 0.5)
+    ); */
 }
 
-.TCard:hover {
+.PCard:hover {
   width: 17.7%;
   border-left: 4px solid red;
   transform-origin: 0px top;
   transition: 0.3s ease-out;
 }
 
-.TMovieButton {
+.PMovieButton {
   border: none;
   padding: 10px 20px 10px 20px;
   font-size: large;
@@ -107,10 +107,10 @@
   border-radius: 4px;
 }
 
-.TMovieButton:hover {
-  /* color: white; */
+.PMovieButton:hover {
+  color: white;
   z-index: 100;
-  background: transparent;
+  background: teal;
   text-transform: uppercase;
 }
 span {
@@ -118,7 +118,7 @@ span {
   z-index: -1;
 }
 
-.TMovieButton .Tfirst {
+.PMovieButton .Pfirst {
   content: "";
   position: absolute;
   right: 100%;
@@ -128,17 +128,17 @@ span {
   z-index: 10;
   background: linear-gradient(
     0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
+    rgba(11, 20, 23, 0.5),
+    rgba(14, 26, 31, 0.5)
   );
 }
 
-.TMovieButton:hover .Tfirst {
+.PMovieButton:hover .Pfirst {
   top: 0;
   /* z-index: 10; */
   right: 0;
 }
-.TMovieButton .Tsecond {
+.PMovieButton .Psecond {
   content: "";
   position: absolute;
   left: 25%;
@@ -147,18 +147,18 @@ span {
   width: 25%;
   background: linear-gradient(
     0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
+    rgba(11, 20, 23, 0.5),
+    rgba(14, 26, 31, 0.5)
   );
 }
 
-.TMovieButton:hover .Tsecond {
+.PMovieButton:hover .Psecond {
   top: 0;
   z-index: 10;
   left: 50%;
 }
 
-.TMovieButton .Tthird {
+.PMovieButton .Pthird {
   content: "";
   position: absolute;
   left: 50%;
@@ -167,19 +167,19 @@ span {
   width: 25%;
   background: linear-gradient(
     0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
+    rgba(11, 20, 23, 0.5),
+    rgba(14, 26, 31, 0.5)
   );
   z-index: 10;
 }
 
-.TMovieButton:hover .Tthird {
+.PMovieButton:hover .Pthird {
   top: 0;
   z-index: 10;
   left: 25%;
 }
 
-.TMovieButton .Tfourth {
+.PMovieButton .Pfourth {
   content: "";
   position: absolute;
   left: 100%;
@@ -189,18 +189,18 @@ span {
   width: 25%;
   background: linear-gradient(
     0deg,
-    rgba(20, 116, 155, 0.5),
-    rgba(20, 116, 155, 0.5)
+    rgba(11, 20, 23, 0.5),
+    rgba(14, 26, 31, 0.5)
   );
 }
 
-.TMovieButton:hover .Tfourth {
+.PMovieButton:hover .Pfourth {
   top: 0;
   z-index: 10;
   left: 0;
 }
 
-.TShowMore {
+.PShowMore {
   /* margin: 20px auto 20px auto; */
   border: none;
   padding: 10px 20px 10px 20px;
@@ -216,25 +216,25 @@ span {
   border-radius: 4px;
   margin: 30px auto 30px auto;
 }
-.TBtnClass {
+.PBtnClass {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.TShowMore:hover {
+.PShowMore:hover {
   color: darkblue;
   z-index: 100;
   background: transparent;
   text-transform: uppercase;
 }
 /* span {
-  transition: all 0.7s;
-  z-index: -1;
-} */
+    transition: all 0.7s;
+    z-index: -1;
+  } */
 
-.TShowMore .TFirst {
+.PShowMore .PFirst {
   content: "";
   position: absolute;
   right: 100%;
@@ -249,12 +249,12 @@ span {
   );
 }
 
-.TShowMore:hover .TFirst {
+.PShowMore:hover .PFirst {
   top: 0;
   /* z-index: 10; */
   right: 0;
 }
-.TShowMore .TSecond {
+.PShowMore .PSecond {
   content: "";
   position: absolute;
   left: 25%;
@@ -268,13 +268,13 @@ span {
   );
 }
 
-.TShowMore:hover .TSecond {
+.PShowMore:hover .PSecond {
   top: 0;
   z-index: 10;
   left: 50%;
 }
 
-.TShowMore .TThird {
+.PShowMore .PThird {
   content: "";
   position: absolute;
   left: 50%;
@@ -289,13 +289,13 @@ span {
   z-index: 10;
 }
 
-.TShowMore:hover .TThird {
+.PShowMore:hover .PThird {
   top: 0;
   z-index: 10;
   left: 25%;
 }
 
-.TShowMore .TFourth {
+.PShowMore .PFourth {
   content: "";
   position: absolute;
   left: 100%;
@@ -310,7 +310,7 @@ span {
   );
 }
 
-.TShowMore:hover .TFourth {
+.PShowMore:hover .PFourth {
   top: 0;
   z-index: 10;
   left: 0;
