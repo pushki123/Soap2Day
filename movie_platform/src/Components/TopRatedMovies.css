@@ -1,0 +1,317 @@
+.body {
+  background-color: gray;
+}
+.TRCard {
+  width: 17.7%;
+  height: 400px;
+  border-radius: 5px;
+  /* background-color: teal; */
+  display: inline-block;
+  margin: 0px 1% 0px 1%;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  transition: 0.7s;
+  transition-property: all;
+  border-left: 1px solid gray;
+  /* opacity: 0; */
+}
+
+.poster1TR {
+  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/Happiness_for_beginners.jpg");
+  background-size: 100% 100%;
+}
+.poster2TR {
+  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/JoyRide.jpg");
+  background-size: 100% 100%;
+}
+.poster3TR {
+  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/Paradise.jpg");
+  background-size: 100% 100%;
+}
+.poster4TR {
+  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/SympathyForTheDevil.jpg");
+  background-size: 100% 100%;
+}
+.poster5TR {
+  background-image: url("D:/My_Projects/movie_platform/movie_platform/public/TheBeanieBubble.jpg");
+  background-size: 100% 100%;
+}
+
+.TRMovieName {
+  color: white;
+  width: fit-content;
+  font-size: large;
+  font-weight: 900;
+  margin-top: 20%;
+  padding: 10px 20px 10px 20px;
+  /* border: 1px solid black; */
+  margin: 0% auto 0% auto;
+  /* background: linear-gradient(
+      0deg,
+      rgba(20, 116, 155, 0.5),
+      rgba(20, 116, 155, 0.5)
+    ); */
+  /* url(D:/My_Projects/movie_platform/movie_platform/public/Happiness_for_beginners.jpg); */
+}
+
+.TRRating {
+  color: white;
+  width: fit-content;
+  font-size: large;
+  font-weight: 900;
+  margin-top: 20%;
+  padding: 10px 20px 10px 20px;
+  /* border: 1px solid black; */
+  margin: 0% auto 0% auto;
+  /* background: linear-gradient(
+      0deg,
+      rgba(20, 116, 155, 0.5),
+      rgba(20, 116, 155, 0.5)
+    ); */
+}
+.TRReleaseYear {
+  color: white;
+  width: fit-content;
+  font-size: large;
+  font-weight: 900;
+  margin-top: 20%;
+  padding: 10px 20px 10px 20px;
+  /* border: 1px solid black; */
+  margin: 0% auto 0% auto;
+  /* background: linear-gradient(
+      0deg,
+      rgba(20, 116, 155, 0.5),
+      rgba(20, 116, 155, 0.5)
+    ); */
+}
+
+.TRCard:hover {
+  width: 17.7%;
+  border-left: 4px solid red;
+  transform-origin: 0px top;
+  transition: 0.3s ease-out;
+}
+
+.TRMovieButton {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: large;
+  position: relative;
+  background: teal;
+  color: white;
+  /* text-transform: uppercase; */
+  /* border: 3px solid #ffa500; */
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.TRMovieButton:hover {
+  /* color: white; */
+  z-index: 100;
+  background: transparent;
+  text-transform: uppercase;
+}
+span {
+  transition: all 0.7s;
+  z-index: -1;
+}
+
+.TRMovieButton .TRfirst {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+}
+
+.TRMovieButton:hover .TRfirst {
+  top: 0;
+  /* z-index: 10; */
+  right: 0;
+}
+.TRMovieButton .TRsecond {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: -100%;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+}
+
+.TRMovieButton:hover .TRsecond {
+  top: 0;
+  z-index: 10;
+  left: 50%;
+}
+
+.TRMovieButton .TRthird {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 100%;
+  width: 25%;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+  z-index: 10;
+}
+
+.TRMovieButton:hover .TRthird {
+  top: 0;
+  z-index: 10;
+  left: 25%;
+}
+
+.TRMovieButton .TRfourth {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+}
+
+.TRMovieButton:hover .TRfourth {
+  top: 0;
+  z-index: 10;
+  left: 0;
+}
+
+.TRShowMore {
+  /* margin: 20px auto 20px auto; */
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: large;
+  position: relative;
+  background: teal;
+  color: white;
+  /* text-transform: uppercase; */
+  /* border: 3px solid #ffa500; */
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 30px auto 30px auto;
+}
+.TRBtnClass {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.TRShowMore:hover {
+  color: darkblue;
+  z-index: 100;
+  background: transparent;
+  text-transform: uppercase;
+}
+/* span {
+    transition: all 0.7s;
+    z-index: -1;
+  } */
+
+.TRShowMore .TRFirst {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+}
+
+.TRShowMore:hover .TRFirst {
+  top: 0;
+  /* z-index: 10; */
+  right: 0;
+}
+.TRShowMore .TRSecond {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: -100%;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+}
+
+.TRShowMore:hover .TRSecond {
+  top: 0;
+  z-index: 10;
+  left: 50%;
+}
+
+.TRShowMore .TRThird {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 100%;
+  width: 25%;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+  z-index: 10;
+}
+
+.TRShowMore:hover .TRThird {
+  top: 0;
+  z-index: 10;
+  left: 25%;
+}
+
+.TRShowMore .TRFourth {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 116, 155, 0.5),
+    rgba(20, 116, 155, 0.5)
+  );
+}
+
+.TRShowMore:hover .TRFourth {
+  top: 0;
+  z-index: 10;
+  left: 0;
+}
