@@ -1,44 +1,44 @@
-.logo-div{
-    /* width: 50px;
+.logo-div {
+  /* width: 50px;
     height: 50px; */
-    display: inline-flex;
+  display: inline-block;
 }
 
-.Navbar{
-    width: 100%;
-    height: 20%;
-    background-color: black;
-    display: flex;
-    margin: 0%;
-    padding: 20px 0px 20px 0px;
+.Navbar {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  display: flex;
+  margin: 0%;
+  padding: 20px 0px 20px 0px;
 }
 
-
-
-.NavbarNavigationLink{
-    text-decoration: none;
-    display: inline-flex;
-    margin:  0px 2% 0px 2%;
-    color: aliceblue;
-    font-size: medium;
-    font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    /* display: inline-flex; */
-    align-self: flex-end;
-    padding: 10px 20px 10px 20px;
+.NavbarNavigationLink {
+  text-decoration: none;
+  width: fit-content;
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  color: aliceblue;
+  font-size: medium;
+  font-weight: 900;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  /* display: inline-flex; */
+  /* align-self: flex-end; */
+  padding: 10px 20px 10px 20px;
 }
 
-.NavbarNavigation{
-    display: inline-flex;
-    width: 80%;
-    /* align-items: end; */
-    align-items: flex-end;
-    margin-left: 40%;
+.NavbarNavigation {
+  display: inline-block;
+  width: 100%;
+  /* align-items: end; */
+  /* align-items: flex-end; */
+  /* margin-left: 40%; */
+  /* right: 0px; */
+  /* position: absolute; */
 }
 
-.NavbarNavigationLink:hover{
-    color: teal;
-    transition: 0.3s ease;
-    transform-origin: left;
+.NavbarNavigationLink:hover {
+  color: teal;
+  transition: 0.3s ease-in-out;
 }
