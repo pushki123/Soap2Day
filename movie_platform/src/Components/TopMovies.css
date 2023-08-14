@@ -1,0 +1,49 @@
+.Gradient {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(
+      0deg,
+      rgb(130, 140, 135),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/public/MovieCollage.jpg);
+
+  background-size: cover;
+  text-align: center;
+  /* background-blend-mode: darken; */
+}
+.T1 {
+  color: white;
+  padding: 40px 20px 30px 40px;
+  font-size: 80px;
+}
+
+.MoviesLayout {
+  width: 90%;
+  /* background-color: #828c87; */
+  /* height: 2000px; */
+  margin: 0px 5% 0px 5%;
+  padding: 30px 0px 0px 0px;
+}
+
+.MoviePoster {
+  width: 21%;
+  display: inline-block;
+  height: 350px;
+  background-color: teal;
+  margin: 0px 2% 0% 2%;
+  border-radius: 10px;
+}
+
+.MovieLayout {
+  text-align: right;
+  background-color: rgb(130, 140, 135);
+}
+
+.MovieInput {
+  margin-right: 7%;
+  padding: 10px 20px 10px 0px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(130, 140, 135);
+}
