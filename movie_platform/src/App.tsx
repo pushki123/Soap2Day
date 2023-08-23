@@ -19,13 +19,13 @@ function App() {
       {/* <Navbar /> */}
       {
         /* <LatestMovies /> */
-        // <Router>
-        //   <Routes>
-        //     <Route path="/" element={<HomePage />}></Route>
-        //     <Route path="/AboutMoviePage" element={<AboutMoviePage />}></Route>
-        //     <Route path="/MoviePage" element={<MoviePage />}></Route>
-        //   </Routes>
-        // </Router>
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/AboutMoviePage" element={<AboutMoviePage />}></Route>
+            <Route path="/MoviePage" element={<MoviePage />}></Route>
+          </Routes>
+        </Router>
       }
     </>
   );
