@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "D:/My_Projects/movie platform/movie_platform/public/SSoap2Day.png";
+import logo from "D:/My_Projects/movie_platform/movie_platform/public/SSoap2Day.png";
 
 function Navbar() {
   return (
@@ -16,10 +16,13 @@ function Navbar() {
           />
         </div>
         <div className="NavbarNavigation">
-          <a href="" className="NavbarNavigationLink">
+          <a href="/" className="NavbarNavigationLink">
             HOME
           </a>
-          <a href="" className="NavbarNavigationLink">
+          <a
+            href="D:\My_Projects\movie_platform\movie_platform\src\Components\LatestMovies.tsx"
+            className="NavbarNavigationLink"
+          >
             LATEST MOVIES
           </a>
 
