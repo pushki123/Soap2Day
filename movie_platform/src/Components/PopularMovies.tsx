@@ -1,22 +1,10 @@
 import "./PopularMovies.css";
-import React from "react";
-import { ithRouter, RouteComponentProps } from "react-router-dom";
-
-// Define the props interface
-interface PopularMoviesProps extends RouteComponentProps {
-  history: any;
-}
-
-function PopularMovies(props: PopularMoviesProps) {
-  function Moveit() {
-    // Use the route path you've defined for MoviePage
-    props.history.push("/movie-page"); // Replace with your actual route
-  }
+function PopularMovies() {
   return (
     <>
       <div className="Row3">
         <h1>Treanding Movies</h1>
-        <div className="PCard poster1P" onClick={Moveit}>
+        <div className="PCard poster1P">
           <div className="PMovieName">Happiness For Beginners</div>
           <div className="PRating">8/10</div>
           <div className="PReleaseYear" id="">
