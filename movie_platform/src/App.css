@@ -1,0 +1,8 @@
+.Background {
+  background-image: url(/public/GuardiansOfTheGalaxy.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  /* padding-top: 10%; */
+  /* background-color: gray; */
+}
