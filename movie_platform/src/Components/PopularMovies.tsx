@@ -1,17 +1,26 @@
+import React from "react";
 import "./PopularMovies.css";
+
 function PopularMovies() {
+  const handlePlayButtonClick = (path: string) => {
+    window.location.href = path;
+  };
+
   return (
     <>
       <div className="Row3">
-        <h1>Treanding Movies</h1>
+        <h1>Popular movies</h1>
         <div className="PCard poster1P">
           <div className="PMovieName">Happiness For Beginners</div>
           <div className="PRating">8/10</div>
           <div className="PReleaseYear" id="">
             2023
           </div>
-          <button className="PMovieButton">
-            hover me
+          <button
+            className="PMovieButton"
+            onClick={() => handlePlayButtonClick("./TM1")}
+          >
+            Play It
             <span className="Pfirst"></span>
             <span className="Psecond"></span>
             <span className="Pthird"></span>
@@ -24,8 +33,11 @@ function PopularMovies() {
           <div className="PReleaseYear" id="">
             zxc
           </div>
-          <button className="PMovieButton">
-            hover me
+          <button
+            className="PMovieButton"
+            onClick={() => handlePlayButtonClick("/TM2")}
+          >
+            Play It
             <span className="Pfirst"></span>
             <span className="Psecond"></span>
             <span className="Pthird"></span>
@@ -38,8 +50,11 @@ function PopularMovies() {
           <div className="PReleaseYear" id="">
             zxc
           </div>
-          <button className="PMovieButton">
-            hover me
+          <button
+            className="PMovieButton"
+            onClick={() => handlePlayButtonClick("/TM3")}
+          >
+            Play It
             <span className="Pfirst"></span>
             <span className="Psecond"></span>
             <span className="Pthird"></span>
@@ -52,8 +67,11 @@ function PopularMovies() {
           <div className="PReleaseYear" id="">
             zxc
           </div>
-          <button className="PMovieButton">
-            hover me
+          <button
+            className="PMovieButton"
+            onClick={() => handlePlayButtonClick("/TM4")}
+          >
+            Play It
             <span className="Pfirst"></span>
             <span className="Psecond"></span>
             <span className="Pthird"></span>
@@ -66,8 +84,11 @@ function PopularMovies() {
           <div className="PReleaseYear" id="">
             zxc
           </div>
-          <button className="PMovieButton">
-            hover me
+          <button
+            className="PMovieButton"
+            onClick={() => handlePlayButtonClick("/TM5")}
+          >
+            Play It
             <span className="Pfirst"></span>
             <span className="Psecond"></span>
             <span className="Pthird"></span>
