@@ -1,8 +1,11 @@
 .MainBoxTM5 {
   width: 100%;
   height: fit-content;
+  background-image: url(/public/SympathyForTheDevil.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: darken;
   padding: 90px 0px 0px 0px;
-  background-color: teal;
+  background-size: contain;
 }
 .ContentBoxTM5 {
   width: 90%;
