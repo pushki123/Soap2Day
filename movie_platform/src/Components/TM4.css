@@ -19,10 +19,22 @@
 }
 
 .VideoBoxTM4 {
-  width: 1353px;
+  position: relative;
   height: 700px;
+  width: 1353px;
+  max-width: 100%;
+  overflow: hidden;
   background-image: url(/public/MoviepageLogo.png);
   background-size: cover;
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+}
+
+.VideoPlayer {
+  width: 1353px; /* Set the video width to 70% of the parent div */
+  height: 700px; /* Set the video height to 70% of the parent div */
+  object-fit: cover; /* Maintain aspect ratio while fitting video inside */
 }
 
 .MovieNameTM4 {
