@@ -1,12 +1,38 @@
+import { useRef, useState } from "react";
 import "./TM2.css";
 
 function TM2() {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  const handleVideoClick = () => {
+    const video = videoRef.current;
+
+    if (video?.paused) {
+      video.play();
+    } else if (video) {
+      video.pause();
+    }
+
+    setIsVideoPlaying(video?.paused ?? true);
+  };
+
   return (
     <>
       {/* <Navbar /> */}
       <div className="MainBoxTM2">
         <div className="ContentBoxTM2">
-          <div className="VideoBoxTM2"></div>
+          <div className="VideoBoxTM2" onClick={handleVideoClick}>
+            {isVideoPlaying ? (
+              <video ref={videoRef} width="1450" height="700" controls>
+                <source src="./TM1Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              // You can display a video thumbnail or play button here
+              <div className="PlayButton"></div>
+            )}
+          </div>
           <div className="MovieNameTM2">Meg 2: The Trench</div>
           <div className="MovieInfoTM2">
             An exploratory dive into the deepest depths of the ocean of a daring
