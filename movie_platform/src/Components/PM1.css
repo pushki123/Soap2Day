@@ -1,4 +1,4 @@
-.MainBoxTM3 {
+.MainBoxPM1 {
   width: 100%;
   height: fit-content;
   background-image: url(/public/SympathyForTheDevil.jpg);
@@ -7,7 +7,7 @@
   padding: 90px 0px 0px 0px;
   background-size: contain;
 }
-.ContentBoxTM3 {
+.ContentBoxPM1 {
   width: 90%;
   height: fit-content;
   margin-left: 5%;
@@ -18,7 +18,7 @@
   padding-top: 10%;
 }
 
-.VideoBoxTM3 {
+.VideoBoxPM1 {
   position: relative;
   height: 700px;
   width: 1353px;
@@ -37,22 +37,22 @@
   object-fit: cover; /* Maintain aspect ratio while fitting video inside */
 }
 
-.MovieNameTM3 {
+.MovieNamePM1 {
   font-size: 30px;
   padding: 20px 30px 20px 30px;
 }
 
-.MovieInfoTM3 {
+.MovieInfoPM1 {
   font-size: 20px;
   padding: 20px 30px 20px 30px;
 }
 
-.RealeaseDateTM3 {
+.RealeaseDatePM1 {
   font-size: 20px;
   padding: 20px 30px 20px 30px;
 }
 
-.TagNameTM3 {
+.TagNamePM1 {
   display: inline-block;
   width: fit-content;
   height: fit-content;

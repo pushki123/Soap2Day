@@ -1,7 +1,8 @@
-import { useRef, useState } from "react";
-import "./TM3.css";
+import React, { useState, useRef } from "react";
+import Navbar from "./Navbar";
+import "./PM1.css";
 
-function TM3() {
+function PM1() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -18,13 +19,13 @@ function TM3() {
   };
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="MainBoxTM3">
-        <div className="ContentBoxTM3">
-          <div className="VideoBoxTM3" onClick={handleVideoClick}>
+      <Navbar />
+      <div className="MainBoxPM1">
+        <div className="ContentBoxPM1">
+          <div className="VideoBoxPM1" onClick={handleVideoClick}>
             {isVideoPlaying ? (
               <video ref={videoRef} width="1450" height="700" controls>
-                <source src="./TM1Video.mp4" type="video/mp4" />
+                <source src="./PM1Video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
@@ -32,24 +33,24 @@ function TM3() {
               <div className="PlayButton"></div>
             )}
           </div>
-          <div className="MovieNameTM3">Meg 2: The Trench</div>
-          <div className="MovieInfoTM3">
+          <div className="MovieNamePM1">Meg 2: The Trench</div>
+          <div className="MovieInfoPM1">
             An exploratory dive into the deepest depths of the ocean of a daring
             research team spirals into chaos when a malevolent mining operation
             threatens their mission and forces them into a high-stakes battle
             for survival.
           </div>
-          <div className="RealeaseDateTM3">Release Date: 2023-08-02</div>
-          <div className="TagsTM3">
-            <div className="TagNameTM3">Action</div>
-            <div className="TagNameTM3">Science Fiction</div>
-            <div className="TagNameTM3">Horror</div>
+          <div className="RealeaseDatePM1">Release Date: 2023-08-02</div>
+          <div className="TagsPM1">
+            <div className="TagNamePM1">Action</div>
+            <div className="TagNamePM1">Science Fiction</div>
+            <div className="TagNamePM1">Horror</div>
           </div>
-          <div className="RatingTM3"></div>
+          <div className="RatingPM1"></div>
         </div>
       </div>
     </>
   );
 }
 
-export default TM3;
+export default PM1;
