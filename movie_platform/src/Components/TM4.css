@@ -1,0 +1,63 @@
+.MainBoxTM4 {
+  width: 100%;
+  height: fit-content;
+  background-image: url(/public/SympathyForTheDevil.jpg);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: darken;
+  padding: 90px 0px 0px 0px;
+  background-size: contain;
+}
+.ContentBoxTM4 {
+  width: 90%;
+  height: fit-content;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-top: 10%;
+  padding-top: 10%;
+}
+
+.VideoBoxTM4 {
+  position: relative;
+  height: 700px;
+  width: 1353px;
+  max-width: 100%;
+  overflow: hidden;
+  background-image: url(/public/MoviepageLogo.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+}
+
+.VideoPlayer {
+  width: 1353px; /* Set the video width to 70% of the parent div */
+  height: 700px; /* Set the video height to 70% of the parent div */
+  object-fit: cover; /* Maintain aspect ratio while fitting video inside */
+}
+
+.MovieNameTM4 {
+  font-size: 30px;
+  padding: 20px 30px 20px 30px;
+}
+
+.MovieInfoTM4 {
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+}
+
+.RealeaseDateTM4 {
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+}
+
+.TagNameTM4 {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 30px;
+}
